@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  ai_gateway:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - SECRET_KEY=super_secret_key_para_jwt_en_produccion
